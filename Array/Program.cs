@@ -11,11 +11,18 @@
 
         public static void Main()
         {
-            Console.WriteLine("Attributes");
+            Console.WriteLine("Attributes\n");
             _array.Attributes();
+
             Console.WriteLine(new string('-',60));
-            Console.WriteLine("For Loop");
-            _array.For();
+            Console.WriteLine("For Loop\n");
+            _array.PrintWithForLoop();
+            Console.WriteLine();
+
+            Console.WriteLine(new string('-',60));
+            Console.WriteLine("Foreach Loop\n");
+            _array.PrintWithForeachLoop();
+            Console.WriteLine();
         }
     }
 
@@ -46,11 +53,19 @@
             object SyncRoot = numbers.SyncRoot;
         }
 
-        public void For()
+        public void PrintWithForLoop()
         {
             for (int i = 0; i < numbers.Length; i++)
             {
                 Console.Write(numbers.ElementAt(i) + " ");
+            }
+        }
+
+        public void PrintWithForeachLoop()
+        {
+            foreach (int item in numbers)
+            {
+                Console.Write(item + " ");
             }
         }
     }
