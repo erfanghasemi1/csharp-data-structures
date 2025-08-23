@@ -1,0 +1,15 @@
+E:\C#\DataStructures\Array\bin\Debug\net9.0\Array.exe
+E:\C#\DataStructures\Array\bin\Debug\net9.0\Array.deps.json
+E:\C#\DataStructures\Array\bin\Debug\net9.0\Array.runtimeconfig.json
+E:\C#\DataStructures\Array\bin\Debug\net9.0\Array.dll
+E:\C#\DataStructures\Array\bin\Debug\net9.0\Array.pdb
+E:\C#\DataStructures\Array\obj\Debug\net9.0\Array.GeneratedMSBuildEditorConfig.editorconfig
+E:\C#\DataStructures\Array\obj\Debug\net9.0\Array.AssemblyInfoInputs.cache
+E:\C#\DataStructures\Array\obj\Debug\net9.0\Array.AssemblyInfo.cs
+E:\C#\DataStructures\Array\obj\Debug\net9.0\Array.csproj.CoreCompileInputs.cache
+E:\C#\DataStructures\Array\obj\Debug\net9.0\Array.sourcelink.json
+E:\C#\DataStructures\Array\obj\Debug\net9.0\Array.dll
+E:\C#\DataStructures\Array\obj\Debug\net9.0\refint\Array.dll
+E:\C#\DataStructures\Array\obj\Debug\net9.0\Array.pdb
+E:\C#\DataStructures\Array\obj\Debug\net9.0\Array.genruntimeconfig.cache
+E:\C#\DataStructures\Array\obj\Debug\net9.0\ref\Array.dll
