@@ -11,7 +11,11 @@
 
         public static void Main()
         {
+            Console.WriteLine("Attributes");
             _array.Attributes();
+            Console.WriteLine(new string('-',60));
+            Console.WriteLine("For Loop");
+            _array.For();
         }
     }
 
@@ -40,6 +44,14 @@
 
             // You can use at as locker ( in Array there is no difference between Array and ICollection)
             object SyncRoot = numbers.SyncRoot;
+        }
+
+        public void For()
+        {
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                Console.Write(numbers.ElementAt(i) + " ");
+            }
         }
     }
 }
