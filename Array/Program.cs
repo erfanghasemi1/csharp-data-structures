@@ -23,6 +23,11 @@
             Console.WriteLine("Foreach Loop\n");
             _array.PrintWithForeachLoop();
             Console.WriteLine();
+
+            Console.WriteLine(new string('-', 60));
+            Console.WriteLine("Forr Loop\n");
+            _array.PrintInReversed();
+            Console.WriteLine();
         }
     }
 
@@ -66,6 +71,15 @@
             foreach (int item in numbers)
             {
                 Console.Write(item + " ");
+            }
+        }
+
+        public void PrintInReversed()
+        {
+            // use numbers.forr
+            for (int i = numbers.Length - 1; i >= 0; i--)
+            {
+                Console.Write(numbers.ElementAt(i) + " ");
             }
         }
     }
