@@ -28,6 +28,11 @@
             Console.WriteLine("Forr Loop\n");
             _array.PrintInReversed();
             Console.WriteLine();
+
+            Console.WriteLine(new string('-' , 60));
+            Console.WriteLine("Copy numbers into new array\n");
+            _array.CopyTo();
+            Console.WriteLine();
         }
     }
 
@@ -80,6 +85,17 @@
             for (int i = numbers.Length - 1; i >= 0; i--)
             {
                 Console.Write(numbers.ElementAt(i) + " ");
+            }
+        }
+
+        public void CopyTo()
+        {
+            int[] NewNumbers = new int[numbers.Length + 3];
+            numbers.CopyTo(NewNumbers, 3);
+
+            foreach (var item in NewNumbers)
+            {
+                Console.Write(item + " ");
             }
         }
     }
