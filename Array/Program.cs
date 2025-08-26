@@ -33,6 +33,11 @@
             Console.WriteLine("Copy numbers into new array\n");
             _array.CopyTo();
             Console.WriteLine();
+
+            Console.WriteLine(new string('-', 60));
+            Console.Write("Sum : ");
+            _array.Aggregate();
+            Console.WriteLine();
         }
     }
 
@@ -97,6 +102,12 @@
             {
                 Console.Write(item + " ");
             }
+        }
+
+        public void Aggregate()
+        {
+            int sum = numbers.Aggregate(0,(acc , item) => acc + item);
+            Console.WriteLine(sum);
         }
     }
 }
