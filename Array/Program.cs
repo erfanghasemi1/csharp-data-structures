@@ -38,6 +38,11 @@
             Console.Write("Sum : ");
             _array.Aggregate();
             Console.WriteLine();
+
+            Console.WriteLine(new string('-', 60));
+            Console.WriteLine("AggregateBy:");
+            _array.AggregateBy();
+            Console.WriteLine();
         }
     }
 
@@ -108,6 +113,18 @@
         {
             int sum = numbers.Aggregate(0,(acc , item) => acc + item);
             Console.WriteLine(sum);
+        }
+
+        public void AggregateBy()
+        {
+            IEnumerable<KeyValuePair<int,int>>? result = numbers.AggregateBy(
+                keySelector: x=> Math.Abs(x) % 2 ,
+                seedSelector: g => 0,
+                func: (acc, item) => acc + item
+            );
+
+            foreach (KeyValuePair<int,int> item in result)
+                Console.WriteLine($"{item.Key} : {item.Value}");
         }
     }
 }
