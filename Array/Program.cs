@@ -48,6 +48,11 @@
             Console.WriteLine("All:");
             _array.All();
             Console.WriteLine();
+
+            Console.WriteLine(new string('-', 60));
+            Console.WriteLine("Any:");
+            _array.Any();
+            Console.WriteLine();
         }
     }
 
@@ -137,6 +142,13 @@
             bool CheckPositive = numbers.All(x => x > 0);
 
             Console.WriteLine($"all numbers are positive : {CheckPositive}");
+        }
+
+        public void Any()
+        {
+            bool CheckNegitive = numbers.Any(x => x < 0);
+
+            Console.WriteLine($"There is Negitive number : {CheckNegitive}");
         }
     }
 }
