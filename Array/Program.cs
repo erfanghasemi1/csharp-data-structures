@@ -43,6 +43,11 @@
             Console.WriteLine("AggregateBy:");
             _array.AggregateBy();
             Console.WriteLine();
+
+            Console.WriteLine(new string('-', 60));
+            Console.WriteLine("All:");
+            _array.All();
+            Console.WriteLine();
         }
     }
 
@@ -125,6 +130,13 @@
 
             foreach (KeyValuePair<int,int> item in result)
                 Console.WriteLine($"{item.Key} : {item.Value}");
+        }
+
+        public void All()
+        {
+            bool CheckPositive = numbers.All(x => x > 0);
+
+            Console.WriteLine($"all numbers are positive : {CheckPositive}");
         }
     }
 }
