@@ -53,6 +53,11 @@
             Console.WriteLine("Any:");
             _array.Any();
             Console.WriteLine();
+
+            Console.WriteLine(new string('-', 60));
+            Console.WriteLine("Append:");
+            _array.Append();
+            Console.WriteLine();
         }
     }
 
@@ -149,6 +154,14 @@
             bool CheckNegitive = numbers.Any(x => x < 0);
 
             Console.WriteLine($"There is Negitive number : {CheckNegitive}");
+        }
+
+        public void Append()
+        {
+            IEnumerable<int> NewArray = numbers.Append(85);
+
+            foreach (int item in NewArray)
+                Console.Write(item + " ");
         }
     }
 }
