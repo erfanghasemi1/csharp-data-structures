@@ -58,6 +58,12 @@
             Console.WriteLine("Append:");
             _array.Append();
             Console.WriteLine();
+
+            Console.WriteLine(new string('-', 60));
+            Console.WriteLine("AsMemory:");
+            _array.AsMemory();
+            _array.PrintWithForeachLoop();
+            Console.WriteLine();
         }
     }
 
@@ -162,6 +168,13 @@
 
             foreach (int item in NewArray)
                 Console.Write(item + " ");
+        }
+
+        public void AsMemory()
+        {
+            Memory<int> slice = numbers.AsMemory(1,2);
+
+            slice.Span[0] = -1;
         }
     }
 }
