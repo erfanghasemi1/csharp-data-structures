@@ -69,6 +69,11 @@
             Console.WriteLine("Avg:");
             _array.Avg();
             Console.WriteLine();
+
+            Console.WriteLine(new string('-', 60));
+            Console.WriteLine("Chunk:");
+            _array.Chunk();
+            Console.WriteLine();
         }
     }
 
@@ -187,6 +192,18 @@
             double? avg = numbers.Average(x => x > 0 ? x : null);
 
             Console.WriteLine((int)avg!);
+        }
+
+        public void Chunk()
+        {
+            IEnumerable<int[]> chunk = numbers.Chunk(3);
+
+            foreach (var item in chunk)
+            {
+                foreach (var item1 in item)
+                    Console.Write(item1 + " ");
+                Console.WriteLine();
+            }
         }
     }
 }
