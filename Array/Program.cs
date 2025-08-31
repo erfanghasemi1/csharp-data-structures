@@ -74,6 +74,11 @@
             Console.WriteLine("Chunk:");
             _array.Chunk();
             Console.WriteLine();
+
+            Console.WriteLine(new string('-', 60));
+            Console.WriteLine("Concat:");
+            _array.Concat();
+            Console.WriteLine();
         }
     }
 
@@ -204,6 +209,16 @@
                     Console.Write(item1 + " ");
                 Console.WriteLine();
             }
+        }
+
+        public void Concat()
+        {
+            int[] a = new int[] { 1, 2, 3 };
+
+            foreach (int item in numbers.Concat(a))
+            {
+                Console.Write(item + " ");
+            }  
         }
     }
 }
