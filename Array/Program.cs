@@ -79,6 +79,11 @@
             Console.WriteLine("Concat:");
             _array.Concat();
             Console.WriteLine();
+
+            Console.WriteLine(new string('-', 60));
+            Console.WriteLine("Contains:");
+            _array.Contains();
+            Console.WriteLine();
         }
     }
 
@@ -219,6 +224,13 @@
             {
                 Console.Write(item + " ");
             }  
+        }
+
+        public void Contains()
+        {
+            bool Has402 = numbers.Contains(402);
+
+            Console.WriteLine($"Array has 402 : {Has402}");
         }
     }
 }
