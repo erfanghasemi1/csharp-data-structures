@@ -84,6 +84,11 @@
             Console.WriteLine("Contains:");
             _array.Contains();
             Console.WriteLine();
+
+            Console.WriteLine(new string('-', 60));
+            Console.WriteLine("Count:");
+            _array.Count();
+            Console.WriteLine();
         }
     }
 
@@ -231,6 +236,17 @@
             bool Has402 = numbers.Contains(402);
 
             Console.WriteLine($"Array has 402 : {Has402}");
+        }
+
+        public void Count()
+        {
+            int PositiveNumbers = numbers.Count(x => x > 0);
+
+            int NegitiveNumbers = numbers.Count(x => x < 0);
+
+            Console.WriteLine($"Count of positive numbers : {PositiveNumbers}");
+            Console.WriteLine($"Count of negitive numbers : {NegitiveNumbers}");
+
         }
     }
 }
