@@ -89,6 +89,11 @@
             Console.WriteLine("Count:");
             _array.Count();
             Console.WriteLine();
+
+            Console.WriteLine(new string('-', 60));
+            Console.WriteLine("Distinct:");
+            _array.Distinct();
+            Console.WriteLine();
         }
     }
 
@@ -247,6 +252,12 @@
             Console.WriteLine($"Count of positive numbers : {PositiveNumbers}");
             Console.WriteLine($"Count of negitive numbers : {NegitiveNumbers}");
 
+        }
+
+        public void Distinct()
+        {
+            foreach ( int item in numbers.Distinct())
+                Console.Write(item + " ");
         }
     }
 }
