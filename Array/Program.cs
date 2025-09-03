@@ -99,6 +99,11 @@
             Console.WriteLine("Element at:");
             _array.ElementAt(5);
             Console.WriteLine();
+
+            Console.WriteLine(new string('-', 60));
+            Console.WriteLine("Except:");
+            _array.Except();
+            Console.WriteLine();
         }
     }
 
@@ -269,6 +274,16 @@
         {
             int element = numbers.ElementAt(i);
             Console.Write(element);
+        }
+
+        public void Except()
+        {
+            IEnumerable<int> NewNumbers = numbers.Except(new int[] {72 , -5 , 1});
+
+            foreach (var item in NewNumbers)
+            {
+                Console.Write(item + " ");
+            }
         }
     }
 }
