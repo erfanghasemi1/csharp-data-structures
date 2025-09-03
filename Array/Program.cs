@@ -94,6 +94,11 @@
             Console.WriteLine("Distinct:");
             _array.Distinct();
             Console.WriteLine();
+
+            Console.WriteLine(new string('-', 60));
+            Console.WriteLine("Element at:");
+            _array.ElementAt(5);
+            Console.WriteLine();
         }
     }
 
@@ -258,6 +263,12 @@
         {
             foreach ( int item in numbers.Distinct())
                 Console.Write(item + " ");
+        }
+
+        public void ElementAt(int i)
+        {
+            int element = numbers.ElementAt(i);
+            Console.Write(element);
         }
     }
 }
