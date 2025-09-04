@@ -104,6 +104,11 @@
             Console.WriteLine("Except:");
             _array.Except();
             Console.WriteLine();
+
+            Console.WriteLine(new string('-', 60));
+            Console.WriteLine("Sequence equal:");
+            _array.SequenceEqual();
+            Console.WriteLine();
         }
     }
 
@@ -284,6 +289,13 @@
             {
                 Console.Write(item + " ");
             }
+        }
+
+        public void SequenceEqual()
+        {
+            bool IsEqual = numbers.SequenceEqual(new int[] { 1, 5, 1000 }.AsEnumerable());
+
+            Console.WriteLine($"Is equal : {IsEqual}");
         }
     }
 }
