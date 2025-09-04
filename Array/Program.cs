@@ -109,6 +109,11 @@
             Console.WriteLine("Sequence equal:");
             _array.SequenceEqual();
             Console.WriteLine();
+
+            Console.WriteLine(new string('-', 60));
+            Console.WriteLine("Maximum:");
+            _array.Max();
+            Console.WriteLine();
         }
     }
 
@@ -296,6 +301,15 @@
             bool IsEqual = numbers.SequenceEqual(new int[] { 1, 5, 1000 }.AsEnumerable());
 
             Console.WriteLine($"Is equal : {IsEqual}");
+        }
+
+        public void Max()
+        {
+            int TotalMax = numbers.Max();
+            Console.WriteLine($"maximum is : {TotalMax}");
+
+            int min = numbers.Max(x => -x);
+            Console.WriteLine($"minimum is : {-min}");
         }
     }
 }
