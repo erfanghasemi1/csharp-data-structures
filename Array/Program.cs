@@ -119,6 +119,11 @@
             Console.WriteLine("Minimum:");
             _array.Min();
             Console.WriteLine();
+
+            Console.WriteLine(new string('-', 60));
+            Console.WriteLine("Order:");
+            _array.Order();
+            Console.WriteLine();
         }
     }
 
@@ -324,6 +329,15 @@
 
             int max = numbers.Min(x => -x);
             Console.WriteLine($"Maximum : {-max}");
+        }
+
+        public void Order()
+        {
+            Console.Write("Ascending order : ");
+            foreach (var item in numbers.Order())
+            {
+                Console.Write(item + " ");
+            }
         }
     }
 }
