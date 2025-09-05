@@ -114,6 +114,11 @@
             Console.WriteLine("Maximum:");
             _array.Max();
             Console.WriteLine();
+
+            Console.WriteLine(new string('-', 60));
+            Console.WriteLine("Minimum:");
+            _array.Min();
+            Console.WriteLine();
         }
     }
 
@@ -306,10 +311,19 @@
         public void Max()
         {
             int TotalMax = numbers.Max();
-            Console.WriteLine($"maximum is : {TotalMax}");
+            Console.WriteLine($"Maximum is : {TotalMax}");
 
             int min = numbers.Max(x => -x);
-            Console.WriteLine($"minimum is : {-min}");
+            Console.WriteLine($"Minimum is : {-min}");
+        }
+
+        public void Min()
+        {
+            int TotalMin = numbers.Min();
+            Console.WriteLine($"Minimum : {TotalMin}");
+
+            int max = numbers.Min(x => -x);
+            Console.WriteLine($"Maximum : {-max}");
         }
     }
 }
